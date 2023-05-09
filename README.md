@@ -61,18 +61,17 @@ System requirement information gathered from: https://circuitstream.com/blog/vr-
 
 
 ## Migration Notes
-* Key thingy
+* This project was developed using a PC with the following specs:
+    * Processor: AMD Ryzen Threadripper 3960X
+    * GPU: NVIDIA GeForce GTX 2080 Ti
+    * Memory: 16
+    * Operating System: Microsoft Windows 10
 * Currently, the VR Environment can hold a 3D model that is a max of 82 m x 82 m or 8200 uu x 8200 uu. If a larger 3D model needs to be added or if you wish to make the max capacity larger you will need to update these two items.
 
   ![image](https://user-images.githubusercontent.com/94029910/237011766-ef4d8a67-3645-4fd8-a814-5e11b900e77b.png) 
 
   Reminder: The model is automatically placed at (0,0,0) so after adjusting the size of these two items you should center them.
 * A tethered headset is always recommended to avoid connection timeouts.
-* This project was developed using a PC with the following specs:
-    * Processor: AMD Ryzen Threadripper 3960X
-    * GPU: NVIDIA GeForce GTX 2080 Ti
-    * Memory: 16
-    * Operating System: Microsoft Windows 10
 * All blueprinting was done on SimpleUI and VR Pawn.
 * We used the VR Template Project as a starting point. On the VR Pawn Blueprint Event Graph, everything highlighted in dark gray was taken from the VR Template Project and everything highlighted in white is our work.
 * The images taken from the drone and the .csv file containing must be put into directories /Game/VRTemplate/Blueprints/UI/Images and /Game/VRTemplate/Blueprints/UI/DataTable in order for the 'Create a Claim' function to work properly. Both of these are added automatically in script (IDK NAME ASK ASIM) under the automation repository. Should you choose to change these locations you will need to update (SCRIPT NAME) and the paths in both 'Get Assets by Path' Nodes that are called off of the 'Event BeginPlay' Event Node in the VR Pawn Blueprint Event Graph. ![image](https://user-images.githubusercontent.com/94029910/237002730-007b2348-00c7-43f2-9aac-ffff0a4a8efd.png)
