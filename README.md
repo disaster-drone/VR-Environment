@@ -52,7 +52,7 @@ However, it was only tested with the Oculus Quest 2 and the Oculus Rift. We reco
 **Recommended Hardware and System Requirements for the Oculus Quest 2:**
 * Processor: Intel i5-4590 / AMD Ryzen 5 1500X or better
 * GPU: NVIDIA GeForce GTX 1070 or AMD 500 Series and higher
-* Memory: 8GB
+* Memory: 8 GB RAM
 * Operating System: Microsoft Windows 10
 * USB Ports: 1x USB port
 * Note: The Oculus Quest is a tetherless device but you may choose to purchase Oculus Link cable to connect the Oculus Quest with your PC due to frequent connection timeouts.
@@ -64,7 +64,7 @@ System requirement information gathered from: https://circuitstream.com/blog/vr-
 * This project was developed using a PC with the following specs:
     * Processor: AMD Ryzen Threadripper 3960X
     * GPU: NVIDIA GeForce GTX 2080 Ti
-    * Memory: 16
+    * Memory: 16 GB RAM
     * Operating System: Microsoft Windows 10
 * Currently, the VR Environment can hold a 3D model that is a max of 82 m x 82 m or 8200 uu x 8200 uu. If a larger 3D model needs to be added or if you wish to make the max capacity larger you will need to update these two items.
 
