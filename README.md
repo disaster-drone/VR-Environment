@@ -10,15 +10,14 @@
 
 
 ## Description
-The VR Environment is a component of our disaster drone sysytem, serving as the fundamental environment for movement and claim creation within VR. This project was developed using Unreal Engine, utilizing the VR Template Project created by Epic Games as a starting point. Within the environment, the user can teleport virtically & horizontally, snap turn, and create claims by placing down a cone. Upon placement of a cone, the closest image captured by the drone is displayed. 
-
+The VR Environment is a component of our disaster drone sysytem, serving as the fundamental environment for movement and claim creation within VR. This project was developed using Unreal Engine, utilizing the VR Template Project created by Epic Games as a starting point. Within the environment the user can teleport vertically & horizontally, snap turn, and create claims by placing down a cone. Upon placement of a cone, the closest image captured by the drone is displayed. 
 
 
 ## Demo
 (put video here)
 
 ## Installation
-
+(idk figure it out)
 
 
 ## Hardware & System Requirements
@@ -48,10 +47,44 @@ However, it was only tested with the Oculus Quest 2 and the Oculus Rift. We reco
 * Note: The Oculus Quest is a tetherless device but you may choose to purchase Oculus Link cable to connect the Oculus Quest with your PC due to frequent connection timeouts.
 
 System requirement information gathered from: https://circuitstream.com/blog/vr-hardware
+
+
 ## Migration Notes
+* Key thingy
+* Currently, the VR Environment can hold a 3D model that is a max of 82 m x 82 m or 8200 uu x 8200 uu. If a larger 3D model needs to be added or if you wish to make the max capacity larger you will need to update these two items.
+
+  ![image](https://user-images.githubusercontent.com/94029910/237011766-ef4d8a67-3645-4fd8-a814-5e11b900e77b.png) 
+
+  Reminder: The model is automatically placed at (0,0,0) so after adjusting the size of these two items you should center them.
 * A tethered headset is always recommended to avoid connection timeouts.
+* This project was developed using a PC with the following specs:
+    * Processor: AMD Ryzen Threadripper 3960X
+    * GPU: NVIDIA GeForce GTX 2080 Ti
+    * Memory: 16
+    * Operating System: Microsoft Windows 10
 * All blueprinting was done on SimpleUI and VR Pawn.
-* We used the VR Template Project as a starting point. On the VR Pawn Blueprint Event Graph, everthing highlighted in dark gray was taken from the VR Template Project and everything highlighted in white is our work.
-* 
+* We used the VR Template Project as a starting point. On the VR Pawn Blueprint Event Graph, everything highlighted in dark gray was taken from the VR Template Project and everything highlighted in white is our work.
+* The images taken from the drone and the .csv file containing must be put into directories /Game/VRTemplate/Blueprints/UI/Images and /Game/VRTemplate/Blueprints/UI/DataTable in order for the 'Create a Claim' function to work properly. Both of these are added automatically in script (IDK NAME ASK ASIM) under the automation repository. Should you choose to change these locations you will need to update (SCRIPT NAME) and the paths in both 'Get Assets by Path' Nodes that are called off of the 'Event BeginPlay' Event Node in the VR Pawn Blueprint Event Graph. ![image](https://user-images.githubusercontent.com/94029910/237002730-007b2348-00c7-43f2-9aac-ffff0a4a8efd.png)
+  Additionally, you will need to make sure the new directories are cooked in project settings. 
+
+  ![image](https://user-images.githubusercontent.com/94029910/237002895-e87b72bb-e430-4a42-ad9e-f99dea0e62d7.png)
+
 
 ## Controls
+**Movement**
+* Teleport
+    * Move your right motion controllers thumbstick in the direction you want to move. The teleport visualizer will appear in the level to indicate where you will move to.
+    * Release the thumbstick to teleport to the selected location.
+* Fly
+    * Fly up: Press the right innter grip to teleport up.
+    * Fly down: Press the left inner grip to teleport down.
+* Snap Turn
+    * To rotate your virtual character without moving your head, move your left motion controller's thumbstick in the direction you want to turn.
+**Make a Claim**
+* Place a Cone
+    * Hold down your right motion controllers back trigger in the direction you want to place the cone. The place a cone visualizer appears in the level to indicate where the cone will be placed.
+    * Release the trigger to place the cone in the selected location and toggle the UI that displays the closest camera angle.
+* UI
+    * After placing a cone, a UI menu will pop up attatched to your right motion controller.
+    * To click buttons on the UI use the left motion controllers laser pointer to hover over the button you wish to press.
+    * To press the button click the left motion controllers back trigger.
