@@ -17,7 +17,18 @@ The VR Environment is a component of our disaster drone sysytem, serving as the 
 (put video here)
 
 ## Installation
-(idk figure it out)
+**Prerequisites**
+Download Unreal Engine Editor Version: 5.0.3-20979098+++UE5+Release-5.0.
+
+Download the Oculus App on your Desktop.
+
+Set up your VR Headset on the Oculus App.
+
+Clone the repository
+~~~
+$ git clone https://github.com/disaster-drone/VR-Environment.git
+~~~
+Launch the Unreal Engine Project File called    ![image](https://github.com/disaster-drone/VR-Environment/assets/94029910/ab4b8608-72cc-42fd-bd23-de033497288c)    to edit the project
 
 
 ## Hardware & System Requirements
