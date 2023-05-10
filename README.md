@@ -61,7 +61,14 @@ System requirement information gathered from: https://circuitstream.com/blog/vr-
 
 
 ## Migration Notes
-* This project was developed using a PC with the following specs:
+* This project was developed using PC and Virtual Machine with the following specs:
+
+| Machine Name | Operating System | GPU | Processor | RAM | Hard Disk |
+| --- | --- | --- | --- | --- | --- |
+| Google Cloud Compute Engine | Windows Server 2022 | 1 x NVIDIA T4 Virtual Workstation | n1-highcpu-32 (32 vCPU) | 28.8 GB | 250 GB SSD |
+| Paperspace GPU VM | Windows Server 2022 | NVIDIA Quadro RTX4000 | Intel Xeon Silver 4215R (8 vCPU) | 30 GB | 250 GB SSD |
+| Desktop PC | Windows 10 | NVIDIA GeForce RTX 2080Ti | AMD Ryzen Threadripper 3960X (24 vCPU) | 16 GB | 1 TB SSD |
+
     * Processor: AMD Ryzen Threadripper 3960X
     * GPU: NVIDIA GeForce GTX 2080 Ti
     * Memory: 16 GB RAM
