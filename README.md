@@ -69,10 +69,7 @@ System requirement information gathered from: https://circuitstream.com/blog/vr-
 | Paperspace GPU VM | Windows Server 2022 | NVIDIA Quadro RTX4000 | Intel Xeon Silver 4215R (8 vCPU) | 30 GB | 250 GB SSD |
 | Desktop PC | Windows 10 | NVIDIA GeForce RTX 2080Ti | AMD Ryzen Threadripper 3960X (24 vCPU) | 16 GB | 1 TB SSD |
 
-    * Processor: AMD Ryzen Threadripper 3960X
-    * GPU: NVIDIA GeForce GTX 2080 Ti
-    * Memory: 16 GB RAM
-    * Operating System: Microsoft Windows 10
+   
 * Currently, the VR Environment can hold a 3D model that is a max of 82 m x 82 m or 8200 uu x 8200 uu. If a larger 3D model needs to be added or if you wish to make the max capacity larger you will need to update these two items.
 
   ![image](https://user-images.githubusercontent.com/94029910/237011766-ef4d8a67-3645-4fd8-a814-5e11b900e77b.png) 
