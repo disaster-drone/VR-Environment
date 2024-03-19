@@ -10,7 +10,7 @@
 
 
 ## Description
-The VR Environment is a component of our disaster drone sysytem, serving as the fundamental environment for movement and claim creation within VR. This project was developed using Unreal Engine, utilizing the VR Template Project created by Epic Games as a starting point. Within the environment the user can teleport vertically & horizontally, snap turn, and create claims by placing down a cone. Upon placement of a cone, the closest image captured by the drone is displayed. 
+The VR Environment is a component of our disaster drone system, serving as the fundamental environment for movement and claim creation within VR. This project was developed using Unreal Engine, utilizing the VR Template Project created by Epic Games as a starting point. Within the environment, the user can teleport vertically & horizontally, snap turn, and create claims by placing down a cone. Upon placement of a cone, the closest image captured by the drone is displayed. 
 
 
 ## Demo
@@ -78,7 +78,7 @@ System requirement information gathered from: https://circuitstream.com/blog/vr-
 * A tethered headset is always recommended to avoid connection timeouts.
 * All blueprinting was done on SimpleUI and VR Pawn.
 * We used the VR Template Project as a starting point. On the VR Pawn Blueprint Event Graph, everything highlighted in dark gray was taken from the VR Template Project and everything highlighted in white is our work.
-* The images taken from the drone and the .csv file containing must be put into directories /Game/VRTemplate/Blueprints/UI/Images and /Game/VRTemplate/Blueprints/UI/DataTable in order for the 'Create a Claim' function to work properly. Both of these are added automatically in script (IDK NAME ASK ASIM) under the automation repository. Should you choose to change these locations you will need to update (SCRIPT NAME) and the paths in both 'Get Assets by Path' Nodes that are called off of the 'Event BeginPlay' Event Node in the VR Pawn Blueprint Event Graph. ![image](https://user-images.githubusercontent.com/94029910/237002730-007b2348-00c7-43f2-9aac-ffff0a4a8efd.png)
+* The images taken from the drone and the .csv file containing must be put into directories /Game/VRTemplate/Blueprints/UI/Images and /Game/VRTemplate/Blueprints/UI/DataTable in order for the 'Create a Claim' function to work properly. Both of these are added automatically you can find the script under the automation repository. Should you choose to change these locations you will need to update that accordingly and the paths in both 'Get Assets by Path' Nodes that are called off of the 'Event BeginPlay' Event Node in the VR Pawn Blueprint Event Graph. ![image](https://user-images.githubusercontent.com/94029910/237002730-007b2348-00c7-43f2-9aac-ffff0a4a8efd.png)
   Additionally, you will need to make sure the new directories are cooked in project settings. 
 
   ![image](https://user-images.githubusercontent.com/94029910/237002895-e87b72bb-e430-4a42-ad9e-f99dea0e62d7.png)
@@ -87,12 +87,12 @@ System requirement information gathered from: https://circuitstream.com/blog/vr-
 ## Controls
 **Movement**
 * Teleport
-    * Move your right motion controllers thumbstick in the direction you want to move. The teleport visualizer will appear in the level to indicate where you will move to.
+    * Move your right motion controller's thumbstick in the direction you want to move. The teleport visualizer will appear in the level to indicate where you will move to.
     * Release the thumbstick to teleport to the selected location.
     * <img src = "https://github.com/disaster-drone/VR-Environment/assets/94029910/71eb150e-0697-4b78-a74e-e419bf89e39a" width="300">
 
 * Fly
-    * Fly up: Press the right innter grip to teleport up.
+    * Fly up: Press the right inner grip to teleport up.
     * <img src = "https://github.com/disaster-drone/VR-Environment/assets/94029910/9e881049-3215-44cb-a6b8-ee640c761122" width="300">
     * Fly down: Press the left inner grip to teleport down.
     * <img src = "https://github.com/disaster-drone/VR-Environment/assets/94029910/15e93d70-f960-481e-ae95-b33b7fc004c3" width="300">
@@ -103,12 +103,12 @@ System requirement information gathered from: https://circuitstream.com/blog/vr-
 
 **Make a Claim**
 * Place a Cone
-    * Hold down your right motion controllers back trigger in the direction you want to place the cone. The place a cone visualizer appears in the level to indicate where the cone will be placed.
+    * Hold down your right motion controller's back trigger in the direction you want to place the cone. The place a cone visualizer appears in the level to indicate where the cone will be placed.
     * Release the trigger to place the cone in the selected location and toggle the UI that displays the closest camera angle.
     * <img src = "https://github.com/disaster-drone/VR-Environment/assets/94029910/558f944c-24dd-4b34-b7ad-01bac14f6f01" width="300">
 * UI
-    * After placing a cone, a UI menu will pop up attatched to your right motion controller.
-    * To click buttons on the UI use the left motion controllers laser pointer to hover over the button you wish to press.
-    * To press the button click the left motion controllers back trigger.
+    * After placing a cone, a UI menu will pop up attached to your right motion controller.
+    * To click buttons on the UI use the left motion controller laser pointer to hover over the button you wish to press.
+    * To press the button click the left motion controller back trigger.
     * <img src = "https://github.com/disaster-drone/VR-Environment/assets/94029910/f6918c73-5f95-4c1b-94d1-07da666bcddd" width="300">
 
